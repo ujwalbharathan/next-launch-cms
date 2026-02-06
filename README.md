@@ -166,6 +166,20 @@ npm start
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| MONGODB_URI | MongoDB connection string | mongodb://localhost:27017/nextlaunchcms |
+| MONGODB_URI | MongoDB Atlas connection string | - |
 | ADMIN_EMAIL | Default admin email | admin@example.com |
 | ADMIN_PASSWORD | Default admin password | admin123 |
+
+## Deployment
+
+This project is deployed on **Vercel** for hosting and uses **MongoDB Atlas** for the database.
+
+### Vercel Deployment
+- The project is configured for automatic deployments from the main branch
+- See `vercel.json` for Vercel-specific configuration
+- Visit the deployed site for live testing and production usage
+
+### MongoDB Atlas
+- Database is hosted on **MongoDB Atlas** (cloud)
+- Connection string is configured via the `MONGODB_URI` environment variable
+- Atlas provides automatic backups, scaling, and high availability
