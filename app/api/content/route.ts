@@ -2,6 +2,9 @@ import { NextResponse } from 'next/server';
 import dbConnect from '@/lib/mongodb';
 import Content from '@/models/Content';
 
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
+
 // Default content structure
 const getDefaultContent = () => ({
     branding: {
